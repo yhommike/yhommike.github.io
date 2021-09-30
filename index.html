@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>你好，GitHub</title>
-  </head>
-  <body>
-    <h1>覺得厲害</h1>
-  </body>
-</html>
+<p>Deafault admin and password --> admin/空白 
+第一次登入後需要修改admin密碼(上課環境已經將此步驟做完)，密碼皆為: 2wsx1qaz
+show system interface(檢視系統網路介面IP，預設為DHCP Mode)
+conf system interface
+edit port1
+set mode static
+set ip 192.168.111.1/24
+set allowaccess http ping ssh
+end</p>
+
+<p>Linux 連線方式:(透過防火牆連線進去)
+Fortigate CLI-Console : 
+execute ssh root@172.16.100.1 (password: 3edc$RFV5tgb)</p>
+
+<p>下午13:00-14:00 繪製網路架構圖 (上傳到公司Line群組) </p>
+
+<p>systemctl stop firewalld (關閉Linux Firewall)
+yum -y install httpd (安裝Linux Apache Service)
+systemctl start httpd (啟動Apache服務)
+vi /var/www/html/index.html 
+(i編輯完之後> ESC > 存檔離開(:wq!))</p>
